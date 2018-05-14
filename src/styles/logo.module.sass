@@ -1,0 +1,18 @@
+.logoContainer
+  height: 300px
+  width: 300px
+
+$segments: 5
+
+@for $i from 1 through $segments
+  .logoInner > g:nth-child(#{$i}) > path
+    animation: animate 2s ease-in
+    animation-delay: #{($segments - $i) * 0.15}s
+
+@keyframes animate
+    0%
+        opacity: 0.95
+    50%
+        opacity: 0.75
+    100%
+        opacity: 1

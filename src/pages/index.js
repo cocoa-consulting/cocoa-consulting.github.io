@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import styles from '../styles/index.module.sass'
+import Logo from '../components/logo'
+
 const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+  <div className={styles.container}>
+    <Logo />
   </div>
 )
 
